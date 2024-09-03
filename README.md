@@ -1,6 +1,6 @@
-# DreamNet Research
+# Dreaming Is All You Need
 
-A comprehensive research and implementation of the novel SleepNet method, designed for both text and image classification tasks.
+In classification tasks, achieving a harmonious balance between exploration and precision is of paramount importance. To this end, this research introduces two novel deep learning models, SleepNet and DreamNet, to strike this balance. SleepNet seamlessly integrates supervised learning with unsupervised "sleep" stages using pre-trained encoder models. Dedicated neurons within SleepNet are embedded in these unsupervised features, forming intermittent "sleep" blocks that facilitate exploratory learning. Building upon the foundation of SleepNet, DreamNet employs full encoder-decoder frameworks to reconstruct the hidden states, mimicking the human "dreaming" process. This reconstruction process enables further exploration and refinement of the learned representations. Moreover, the principle ideas of our SleepNet and DreamNet are generic and can be applied to both computer vision and natural language processing downstream tasks. Through extensive empirical evaluations on diverse image and text datasets, SleepNet and DreanNet have demonstrated superior performance compared to state-of-the-art models, showcasing the strengths of unsupervised exploration and supervised precision afforded by our innovative approaches.
 
 ## Table of Contents
 
