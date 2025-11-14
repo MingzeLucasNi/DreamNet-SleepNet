@@ -7,6 +7,7 @@ from argparsers import *
 from torchvision import transforms
 from utilities import *
 from dreamnet import *
+
 #write a logger to record the print statements
 def logger(log_file, message):
     with open(log_file, 'a') as f:

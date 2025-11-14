@@ -1,6 +1,5 @@
 import argparse
 from utilities import *
-
 def args_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type=str, default="cifar100", choices=['cifar100', 'imagenet'])

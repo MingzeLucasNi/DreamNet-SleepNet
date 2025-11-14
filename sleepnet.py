@@ -97,12 +97,7 @@ class ResNet(nn.Module):
         return nn.Sequential(*layers)
 
     def forward(self, x):
-        # hidden = self.mae(x).hidden_states
-        # logits = self.mae(x).logits
-        # logits = self.mae.unpatchify(logits)
-        # hidden = hidden[-1]
-        # hidden = hidden.view(hidden.size(0), -1)
-        # hidden = self.maxpool2(hidden)
+
         out = self.relu(self.bn1(self.conv1(x)))
         out = self.maxpool(out)
         # print('the size after maxpool:',out.shape)

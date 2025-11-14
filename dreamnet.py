@@ -4,6 +4,7 @@ import torch
 mae =  ViTMAEForPreTraining.from_pretrained("facebook/vit-mae-base")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+
 class BasicBlock(nn.Module):
     def __init__(self, in_channels, out_channels, stride=1):
         super(BasicBlock, self).__init__()
