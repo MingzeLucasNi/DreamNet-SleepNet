@@ -1,53 +1,88 @@
-# Dreaming Is All You Need
+# SleepNet and DreamNet]{SleepNet and DreamNet: Enriching and Reconstructing Representations for Consolidated Visual Classification
 
-In classification tasks, achieving a harmonious balance between exploration and precision is of paramount importance. To this end, this research introduces two novel deep learning models, SleepNet and DreamNet, to strike this balance. SleepNet seamlessly integrates supervised learning with unsupervised "sleep" stages using pre-trained encoder models. Dedicated neurons within SleepNet are embedded in these unsupervised features, forming intermittent "sleep" blocks that facilitate exploratory learning. Building upon the foundation of SleepNet, DreamNet employs full encoder-decoder frameworks to reconstruct the hidden states, mimicking the human "dreaming" process. This reconstruction process enables further exploration and refinement of the learned representations. Moreover, the principle ideas of our SleepNet and DreamNet are generic and can be applied to both computer vision and natural language processing downstream tasks. Through extensive empirical evaluations on diverse image and text datasets, SleepNet and DreanNet have demonstrated superior performance compared to state-of-the-art models, showcasing the strengths of unsupervised exploration and supervised precision afforded by our innovative approaches.
+An effective integration of rich feature representations with robust classification mechanisms remains a key challenge in visual understanding tasks. This study introduces two novel deep learning models, SleepNet and DreamNet, which are designed to improve representation utilization through feature enrichment and reconstruction strategies. SleepNet integrates supervised learning with representations obtained from pre-trained encoders, leading to stronger and more robust feature learning. Building on this foundation, DreamNet incorporates pre-trained encoder–decoder frameworks to reconstruct hidden states, allowing deeper consolidation and refinement of visual representations. Our experiments show that our models consistently achieve superior performance compared with existing state-of-the-art methods, demonstrating the effectiveness of the proposed enrichment and reconstruction approaches.
+
+---
 
 ## Table of Contents
 
 - [Features](#features)
 - [Requirements](#requirements)
 - [Usage](#usage)
+- [Citation](#citation)
+- [License](#license)
+
+---
 
 ## Features
 
-- **Vision Transformer (ViT) Integration**: Enhances feature extraction capabilities by leveraging the Vision Transformer (ViT) model, providing state-of-the-art performance in image classification.
-- **ResNet18 Architecture**: Utilizes the proven ResNet18 architecture to achieve high accuracy in image classification tasks.
-- **Advanced Data Processing**: Employs data augmentation and normalization techniques to improve generalization and robustness across diverse datasets.
-- **Efficient GPU Memory Management**: Periodically clears GPU memory to optimize resource utilization, especially during extended training sessions.
-- **Adaptive Learning Rate Scheduling**: Includes a dynamic learning rate scheduler to facilitate smoother and more effective model convergence.
+- **Vision Transformer (ViT) Integration**  
+  Incorporates the ViT architecture to capture global contextual features efficiently for image classification tasks.
+
+- **ResNet18 Backbone**  
+  Utilizes ResNet18 for robust hierarchical feature extraction and strong baseline performance.
+
+- **Advanced Data Processing**  
+  Includes flexible data augmentation and normalization pipelines to enhance generalization and robustness across visual datasets.
+
+- **Efficient GPU Memory Management**  
+  Periodically clears GPU cache to optimize resource utilization during long training runs.
+
+- **Adaptive Learning Rate Scheduling**  
+  Employs a dynamic scheduler for smooth and stable convergence.
+
+---
 
 ## Requirements
 
-- Python 3.8 or later
-- PyTorch
-- torchvision
-- Hugging Face's `transformers` library
-- CUDA-compatible GPU (recommended for faster training)
+- Python 3.8 or later  
+- PyTorch  
+- torchvision  
+- Hugging Face’s `transformers` library (for Vision Transformer support)  
+- CUDA-compatible GPU (recommended)
+
+---
 
 ## Usage
 
-1. **Setup & Installation**:
+### 1. Setup & Installation
 
-   Install all necessary dependencies with:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Install all dependencies:
 
-2. **Training the Text Classifier**:
+```bash
+pip install -r requirements.txt
+```
 
-   To train the SleepNet model with default parameters:
-   ```bash
-   python trainer.py
-   ```
+### 2. Training the Vision Classifier
 
-   For customized training settings, use:
-   ```bash
-   python trainer.py --dataset 'ag_news' --epochs 50 --num_classes 10
-   ```
+Train the **SleepNet** model for image classification with default parameters:
 
-3. **Training the Vision Classifier**:
+```bash
+python train_vision.py
+```
 
-   To train the SleepNet model for image classification:
-   ```bash
-   python train_vision.py --dataset 'cifar100' --epochs 50 --num_classes 10
-   ```
+For customized settings (e.g., specific dataset, epochs, number of classes):
+
+```bash
+python train_vision.py --dataset 'cifar100' --epochs 50 --num_classes 100
+```
+
+---
+
+## Citation
+
+If you find this work helpful, please cite:
+
+```
+@article{dreamnet2025,
+  title={Dreaming Is All You Need: Unifying Exploration and Precision in Deep Visual Learning},
+  author={Your Name and Collaborators},
+  year={2025}
+}
+```
+
+---
+
+## License
+
+This project is released under the [MIT License](LICENSE).
