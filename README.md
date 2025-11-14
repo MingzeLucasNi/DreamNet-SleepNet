@@ -1,4 +1,4 @@
-# SleepNet and DreamNet]{SleepNet and DreamNet: Enriching and Reconstructing Representations for Consolidated Visual Classification
+# SleepNet and DreamNet: Enriching and Reconstructing Representations for Consolidated Visual Classification
 
 An effective integration of rich feature representations with robust classification mechanisms remains a key challenge in visual understanding tasks. This study introduces two novel deep learning models, SleepNet and DreamNet, which are designed to improve representation utilization through feature enrichment and reconstruction strategies. SleepNet integrates supervised learning with representations obtained from pre-trained encoders, leading to stronger and more robust feature learning. Building on this foundation, DreamNet incorporates pre-trained encoder–decoder frameworks to reconstruct hidden states, allowing deeper consolidation and refinement of visual representations. Our experiments show that our models consistently achieve superior performance compared with existing state-of-the-art methods, demonstrating the effectiveness of the proposed enrichment and reconstruction approaches.
 
