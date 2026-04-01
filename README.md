@@ -74,10 +74,11 @@ python train_vision.py --dataset 'cifar100' --epochs 50 --num_classes 100
 If you find this work helpful, please cite:
 
 ```
-@article{dreamnet2025,
-  title={Dreaming Is All You Need: Unifying Exploration and Precision in Deep Visual Learning},
-  author={Your Name and Collaborators},
-  year={2025}
+@article{ni2024dreaming,
+  title={Dreaming is All You Need},
+  author={Ni, Mingze and Liu, Wei},
+  journal={arXiv preprint arXiv:2409.01633},
+  year={2024}
 }
 ```
 

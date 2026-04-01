@@ -12,6 +12,7 @@ def args_parser():
 
     args = parser.parse_args()
 
+
     num_classes_dict = {'cifar10': 10, 'cifar100': 100, 'imagenet': 1000}
     args.num_classes = num_classes_dict[args.dataset]
     return args

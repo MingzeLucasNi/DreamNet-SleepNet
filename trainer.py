@@ -3,8 +3,9 @@ import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torch.optim.lr_scheduler import LambdaLR
-from argparsers import *
 from torchvision import transforms
+
+from argparsers import *
 from utilities import *
 from dreamnet import *
 
