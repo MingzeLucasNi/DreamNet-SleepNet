@@ -74,11 +74,11 @@ python train_vision.py --dataset 'cifar100' --epochs 50 --num_classes 100
 If you find this work helpful, please cite:
 
 ```
-@article{ni2024dreaming,
+@article{ni2026dreaming,
   title={Dreaming is All You Need},
   author={Ni, Mingze and Liu, Wei},
   journal={arXiv preprint arXiv:2409.01633},
-  year={2024}
+  year={2026}
 }
 ```
 
