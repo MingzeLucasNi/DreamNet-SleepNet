@@ -9,7 +9,7 @@ An effective integration of rich feature representations with robust classificat
 - [Features](#features)
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Citation](#citation)
+- [Anonymous Review](#anonymous-review)
 - [License](#license)
 
 ---
@@ -67,19 +67,14 @@ For customized settings (e.g., specific dataset, epochs, number of classes):
 python train_vision.py --dataset 'cifar100' --epochs 50 --num_classes 100
 ```
 
----
+## Anonymous Review
 
-## Citation
+This repository is prepared for double-blind review. Author names, affiliations, and citation metadata are intentionally omitted during the review period.
 
-If you find this work helpful, please cite:
+An anonymized repository link can be added here:
 
-```
-@article{ni2024dreaming,
-  title={Dreaming is All You Need},
-  author={Ni, Mingze and Liu, Wei},
-  journal={arXiv preprint arXiv:2409.01633},
-  year={2024}
-}
+```text
+https://anonymous.4open.science/r/DreamNet-SleepNet-3EC3/
 ```
 
 ---
